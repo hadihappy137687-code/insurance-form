@@ -8,7 +8,9 @@ form.addEventListener("submit", async function (e) {
     const data = {
         name: form.elements[0].value,
         mobile: form.elements[1].value,
-        insurance: form.elements[2].value,
+        insurance: [...document.querySelectorAll('input[name="insurance"]:checked')]
+.map(i => i.value)
+.join(" ، "),
         expire: form.elements[3].value,
         note: form.elements[7].value
     };
