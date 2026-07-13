@@ -83,6 +83,26 @@ border:none;
 border-radius:10px;
 cursor:pointer">
 
+<div style="margin-top:30px;background:#eef5ff;padding:20px;border-radius:15px">
+
+<h3>🆔 کد پیگیری</h3>
+
+<h2>${trackingCode}</h2>
+
+</div>
+
+<div style="margin-top:20px;background:#fff7e6;padding:20px;border-radius:15px">
+
+<h3>🎁 کد هدیه</h3>
+
+<h2>${discountCode}</h2>
+
+<p>این کد تخفیف را هنگام تماس یا مراجعه به نمایندگی اعلام کنید.</p>
+
+</div>
+
+<br>
+
 📎 مرحله آخر: بارگذاری مدارک
 
 </button>
