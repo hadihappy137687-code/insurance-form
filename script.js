@@ -10,20 +10,20 @@ const trackingCode =
 const discountCode =
 "HYD-" + Math.random().toString(36).substring(2,7).toUpperCase();
 const data = {
-    name: form.elements[0].value,
-    mobile: form.elements[1].value,
+    name: document.getElementById("name").value,
+    mobile: document.getElementById("mobile").value,
 
     insurance: [...document.querySelectorAll('input[name="insurance"]:checked')]
         .map(i => i.value)
         .join(" ، "),
 
-    expire: document.querySelector('input[type="date"]').value,
+    expire: document.getElementById("expire").value,
 
     trackingCode: trackingCode,
 
     discountCode: discountCode,
 
-    note: document.querySelector("textarea").value
+    note: document.getElementById("note").value
 };
 
     try {
