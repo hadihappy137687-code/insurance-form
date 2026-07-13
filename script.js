@@ -4,16 +4,27 @@ const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyqPAdJcd7oU9tu63SU
 
 form.addEventListener("submit", async function (e) {
     e.preventDefault();
+const trackingCode =
+"BH-" + Date.now().toString().slice(-6);
 
-    const data = {
-        name: form.elements[0].value,
-        mobile: form.elements[1].value,
-        insurance: [...document.querySelectorAll('input[name="insurance"]:checked')]
-.map(i => i.value)
-.join(" ، "),
-        expire: form.elements[3].value,
-        note: form.elements[7].value
-    };
+const discountCode =
+"HYD-" + Math.random().toString(36).substring(2,7).toUpperCase();
+const data = {
+    name: form.elements[0].value,
+    mobile: form.elements[1].value,
+
+    insurance: [...document.querySelectorAll('input[name="insurance"]:checked')]
+        .map(i => i.value)
+        .join(" ، "),
+
+    expire: document.querySelector('input[type="date"]').value,
+
+    trackingCode: trackingCode,
+
+    discountCode: discountCode,
+
+    note: document.querySelector("textarea").value
+};
 
     try {
 
@@ -22,11 +33,6 @@ form.addEventListener("submit", async function (e) {
             body: JSON.stringify(data)
         });
 
-        const trackingCode =
-"BH-" + Date.now().toString().slice(-6);
-
-const discountCode =
-"HYD-" + Math.random().toString(36).substring(2,7).toUpperCase();
 
 document.querySelector(".container").innerHTML = `
 
