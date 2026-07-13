@@ -38,10 +38,6 @@ document.querySelector(".container").innerHTML = `
 
 <div style="text-align:center;padding:40px">
 
-document.querySelector(".container").innerHTML = `
-
-<div style="text-align:center;padding:40px">
-
 <h2 style="color:#0b5ed7">
 ✅ درخواست شما با موفقیت ثبت شد
 </h2>
@@ -102,53 +98,6 @@ cursor:pointer">
 </p>
 
 </div>
-
-`;<h3>🆔 کد پیگیری</h3>
-
-<h2>${trackingCode}</h2>
-
-</div>
-
-<div style="margin-top:20px;background:#fff7e6;padding:20px;border-radius:15px">
-
-<h3>🎁 کد هدیه</h3>
-
-<h2>${discountCode}</h2>
-
-<p>
-
-این کد تخفیف را هنگام تماس یا مراجعه به نمایندگی اعلام کنید.
-
-</p>
-
-</div>
-
-<br>
-
-<a href="tel:09146876636">
-
-<button>
-
-تماس با نمایندگی
-
-</button>
-
-</a>
-
-</div>
-
-`;
-        <br><br>
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSd5totQO5MSGmDa8cTdh1KzxezbeZJ7BA8W0t3yXcHJqwrMOw/viewform?usp=header" target="_blank">
-
-<button style="background:#198754">
-
-📎 آپلود مدارک
-
-</button>
-
-</a>
 
         form.reset();
 
