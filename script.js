@@ -86,9 +86,18 @@ document.querySelector(".container").innerHTML = `
 </div>
 
 `;
-        setTimeout(() => {
-    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSd5totQO5MSGmDa8cTdh1KzxezbeZJ7BA8W0t3yXcHJqwrMOw/viewform?usp=header";
-}, 3000);
+        <br><br>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSd5totQO5MSGmDa8cTdh1KzxezbeZJ7BA8W0t3yXcHJqwrMOw/viewform?usp=header" target="_blank">
+
+<button style="background:#198754">
+
+📎 آپلود مدارک
+
+</button>
+
+</a>
+
         form.reset();
 
     } catch (err) {
