@@ -99,6 +99,8 @@ cursor:pointer">
 
 </div>
 
+`;
+        
         form.reset();
 
     } catch (err) {
