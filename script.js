@@ -1,6 +1,6 @@
 const form = document.getElementById("insuranceForm");
 
-const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzwX08dr2R18BLywZ9P2yubfhytRplVXHUloUWOyK0VF8_sESBfvuT04eY8D3ODioif/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzepjycnPsKSRKj5vXR7D5ZJyolQXVws8BnFwA4SxRMyL5nWPy04NaFTP9OdnxGupDG/exec";
 
 form.addEventListener("submit", async function (e) {
     e.preventDefault();
