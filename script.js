@@ -75,7 +75,11 @@ form.addEventListener("submit", async function (e) {
         form.reset();
 
         } catch (err) {
-    console.error(err);
-    alert("❌ خطا در ارسال اطلاعات:\n" + err);
+    alert(
+        "خطا:\n" +
+        err +
+        "\n\nWEB_APP_URL:\n" +
+        WEB_APP_URL
+    );
     }
 });
