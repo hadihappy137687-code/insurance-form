@@ -74,7 +74,8 @@ form.addEventListener("submit", async function (e) {
 
         form.reset();
 
-    } catch (err) {
-        alert("❌ خطا در ارسال اطلاعات");
+        } catch (err) {
+    console.error(err);
+    alert("❌ خطا در ارسال اطلاعات:\n" + err);
     }
 });
