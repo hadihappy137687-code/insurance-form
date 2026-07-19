@@ -13,7 +13,7 @@ function toGregorian(dateStr) {
     dateStr = dateStr.replace(/[۰-۹]/g, d => "۰۱۲۳۴۵۶۷۸۹".indexOf(d));
 
     const p = dateStr.split("/");
-
+console.log(jalaali);
     const g = jalaali.toGregorian(
         parseInt(p[0]),
         parseInt(p[1]),
