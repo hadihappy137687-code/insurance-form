@@ -1,5 +1,3 @@
-alert("script.js loaded");
-
 const form = document.getElementById("insuranceForm");
 const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzepjycnPsKSRKj5vXR7D5ZJyolQXVws8BnFwA4SxRMyL5nWPy04NaFTP9OdnxGupDG/exec";
 
