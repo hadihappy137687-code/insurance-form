@@ -8,21 +8,7 @@ form.addEventListener("submit", async function (e) {
     const trackingCode = "BH-" + Date.now().toString().slice(-6);
     const discountCode = "HYD-" + Math.random().toString(36).substring(2,7).toUpperCase();
 
-function toGregorian(dateStr) {
 
-    dateStr = dateStr.replace(/[۰-۹]/g, d => "۰۱۲۳۴۵۶۷۸۹".indexOf(d));
-
-    const p = dateStr.split("/");
-console.log(jalaali);
-    const g = jalaali.toGregorian(
-        parseInt(p[0]),
-        parseInt(p[1]),
-        parseInt(p[2])
-    );
-
-    return `${g.gy}-${String(g.gm).padStart(2,'0')}-${String(g.gd).padStart(2,'0')}`;
-}
-    
     const data = {
         name: document.getElementById("name").value,
         mobile: document.getElementById("mobile").value,
@@ -30,7 +16,6 @@ console.log(jalaali);
             .map(i => i.value)
             .join(" ، "),
         expire: $("#expire").val(),
-expireGregorian: toGregorian($("#expire").val()),
         note: document.getElementById("note").value
     };
 
