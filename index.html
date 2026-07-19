@@ -10,6 +10,12 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/persian-date@1.1.0/dist/persian-date.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+    
 </head>
 
 <body>
@@ -76,7 +82,8 @@ required>
 <input
 id="expire"
 type="text"
-placeholder="مثال: 1405/08/15"
+autocomplete="off"
+placeholder="انتخاب تاریخ"
 required>
 
 <label>
@@ -95,6 +102,30 @@ placeholder="درخواست تکمیلی، مسئولیت، آتش سوزی و..
 
 </div>
 
+<script>
+$(document).ready(function () {
+
+    $("#expire").persianDatepicker({
+
+        format: "YYYY/MM/DD",
+
+        initialValue: false,
+
+        autoClose: true,
+
+        observer: true,
+
+        calendar:{
+            persian:{
+                locale:"fa"
+            }
+        }
+
+    });
+
+});
+</script>
+    
 <script src="script.js"></script>
 
 </body>
