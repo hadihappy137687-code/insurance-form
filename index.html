@@ -103,22 +103,17 @@ placeholder="درخواست تکمیلی، مسئولیت، آتش سوزی و..
 </div>
 
 <script>
-$(document).ready(function () {
+$(function () {
 
     $("#expire").persianDatepicker({
-
         format: "YYYY/MM/DD",
-
         initialValue: false,
-
         autoClose: true,
 
-        observer: true,
+        onSelect: function(unix){
 
-        calendar:{
-            persian:{
-                locale:"fa"
-            }
+            window.expireUnix = unix;
+
         }
 
     });
