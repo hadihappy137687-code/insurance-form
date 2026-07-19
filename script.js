@@ -15,6 +15,7 @@ form.addEventListener("submit", async function (e) {
             .map(i => i.value)
             .join(" ، "),
         expire: $("#expire").val(),
+expireUnix: window.expireUnix || 0,
         note: document.getElementById("note").value
     };
 
