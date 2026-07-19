@@ -14,7 +14,7 @@ form.addEventListener("submit", async function (e) {
         insurance: [...document.querySelectorAll('input[name="insurance"]:checked')]
             .map(i => i.value)
             .join(" ، "),
-        expire: document.getElementById("expire").value,
+        expire: $("#expire").val(),
         note: document.getElementById("note").value
     };
 
