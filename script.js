@@ -30,7 +30,7 @@ function toGregorian(dateStr) {
             .map(i => i.value)
             .join(" ، "),
         expire: $("#expire").val(),
-expireUnix: window.expireUnix || 0,
+        expireGregorian: toGregorian($("#expire").val()),
         note: document.getElementById("note").value
     };
 
